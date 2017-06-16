@@ -1,0 +1,17 @@
+packages/
+Scouts.Core.Interface/bin/Debug/netcoreapp1.1/Scouts.Core.Interface.deps.json
+Scouts.Core.Interface/obj/project.assets.json
+Scouts.Core.Interface/obj/Scouts.Core.Interface.csproj.nuget.g.props
+Scouts.Core.Interface/obj/Scouts.Core.Interface.csproj.nuget.g.targets
+Scouts.Core.Interface/obj/
+Scouts.Core.Model/bin/
+Scouts.Core.Model/obj/
+Scouts.Data/bin/
+Scouts.Data/obj/
+Scouts/bin/Debug/netcoreapp1.1/Scouts.deps.json
+Scouts/bin/
+Scouts/obj/
+Test.Scouts.Data/bin/
+Test.Scouts.Data/obj/
+Test.Scouts.Main/bin/
+Test.Scouts.Main/obj/
