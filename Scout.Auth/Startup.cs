@@ -8,13 +8,12 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Microsoft.IdentityModel.Tokens;
 
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using AutoMapper;
-using Swashbuckle.AspNetCore.Swagger;
-namespace Scouts
+
+namespace Scout.Auth
 {
     public class Startup
     {
@@ -63,12 +62,6 @@ namespace Scouts
             //    config.Filters.Add(new AuthorizeFilter(policy));
             //});
 
-            // Register the Swagger generator, defining one or more Swagger documents
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new Info { Title = "Scouts API", Version = "v1" });
-            });
-
             Register(services);
 
             return new AutofacServiceProvider(this.ApplicationContainer);
@@ -95,20 +88,10 @@ namespace Scouts
                 app.UseDeveloperExceptionPage();
             }
 
-            // Enable middleware to serve generated Swagger as a JSON endpoint.
-            app.UseSwagger();
-
-            // Enable middleware to serve swagger-ui (HTML, JS, CSS etc.), specifying the Swagger JSON endpoint.
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Scouts API V1");
-            });
-
             app.UseMvc();
 
             Mapper.Initialize(cfg => {
                 cfg.CreateMissingTypeMaps = true;
-                cfg.AddProfile<Maps.ScoutDtoMap>();
             });
 
             Mapper.AssertConfigurationIsValid();
@@ -124,7 +107,7 @@ namespace Scouts
             // the collection, and build the container. If you want
             // to dispose of the container at the end of the app,
             // be sure to keep a reference to it as a property or field.
-            builder.RegisterModule(new Data.RegistrationModule());
+            //builder.RegisterModule(new Data.RegistrationModule());
             builder.RegisterModule(new StartupLogic.RegistrationModule(Configuration));
             builder.Populate(services);
             this.ApplicationContainer = builder.Build();

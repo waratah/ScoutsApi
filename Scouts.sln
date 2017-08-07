@@ -3,20 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scouts", "Scouts\Scouts.csproj", "{AAF544BA-D2EA-4797-99B5-39ADA299E47A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scouts", "Scouts\Scouts.csproj", "{AAF544BA-D2EA-4797-99B5-39ADA299E47A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scouts.Data", "Scouts.Data\Scouts.Data.csproj", "{660A432E-CAF2-4989-9A3F-5BE9B5C2B182}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scouts.Data", "Scouts.Data\Scouts.Data.csproj", "{660A432E-CAF2-4989-9A3F-5BE9B5C2B182}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E26C5B0E-BE03-4251-B571-D0887A6B1085} = {E26C5B0E-BE03-4251-B571-D0887A6B1085}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scouts.Core.Interface", "Scouts.Core.Interface\Scouts.Core.Interface.csproj", "{E26C5B0E-BE03-4251-B571-D0887A6B1085}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scouts.Core.Interface", "Scouts.Core.Interface\Scouts.Core.Interface.csproj", "{E26C5B0E-BE03-4251-B571-D0887A6B1085}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scouts.Core.Model", "Scouts.Core.Model\Scouts.Core.Model.csproj", "{9A734CC1-D1D0-4648-8CA0-F387A84BA6A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scouts.Core.Model", "Scouts.Core.Model\Scouts.Core.Model.csproj", "{9A734CC1-D1D0-4648-8CA0-F387A84BA6A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Scouts.Main", "Test.Scouts.Main\Test.Scouts.Main.csproj", "{DF564E3F-1728-493E-8061-0201E94E6EBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.Scouts.Main", "Test.Scouts.Main\Test.Scouts.Main.csproj", "{DF564E3F-1728-493E-8061-0201E94E6EBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Scouts.Data", "Test.Scouts.Data\Test.Scouts.Data.csproj", "{4F0E9F37-3D50-40BB-8D07-7B4DF5AFC5B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.Scouts.Data", "Test.Scouts.Data\Test.Scouts.Data.csproj", "{4F0E9F37-3D50-40BB-8D07-7B4DF5AFC5B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scout.Auth", "Scout.Auth\Scout.Auth.csproj", "{93980E45-22E6-403B-9B41-669F3DA90906}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.Scout.Auth", "Test.Scout.Auth\Test.Scout.Auth.csproj", "{2375BE87-399A-4230-9B7E-C17CD8DD0A7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +52,14 @@ Global
 		{4F0E9F37-3D50-40BB-8D07-7B4DF5AFC5B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F0E9F37-3D50-40BB-8D07-7B4DF5AFC5B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F0E9F37-3D50-40BB-8D07-7B4DF5AFC5B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93980E45-22E6-403B-9B41-669F3DA90906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93980E45-22E6-403B-9B41-669F3DA90906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93980E45-22E6-403B-9B41-669F3DA90906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93980E45-22E6-403B-9B41-669F3DA90906}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2375BE87-399A-4230-9B7E-C17CD8DD0A7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2375BE87-399A-4230-9B7E-C17CD8DD0A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2375BE87-399A-4230-9B7E-C17CD8DD0A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2375BE87-399A-4230-9B7E-C17CD8DD0A7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

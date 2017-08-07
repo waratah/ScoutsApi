@@ -102,11 +102,13 @@ namespace Test.Scouts.Data
             config.Setup(x => x.GetSection(It.IsAny<string>())).Returns(section);
 
             _context = new Mock<ScoutContext>(config.Object);
-            _scoutsInput = new List<Scout>();
-            _scoutsInput.Add(new Scout { Balance = 50, FirstName = "test", ScoutId = 45, Active = true, Email = "test1@test.com", Section = ScoutType.Scout, MemberNumber = "105468" });
-            _scoutsInput.Add(new Scout { Balance = 52, FirstName = "test 2", ScoutId = 2, Active = false, Email = "test2@test.com", Section = ScoutType.Scout, MemberNumber = "105467" });
-            _scoutsInput.Add(new Scout { Balance = 88, FirstName = "test cub", ScoutId = 99, Active = false, Email = "test3@test.com", Section = ScoutType.Cub, MemberNumber = "105466" });
-            _scoutsInput.Add(new Scout { Balance = 56, FirstName = "test 4", ScoutId = 48, Active = true, Email = "test4@test.com", Section = ScoutType.Scout, MemberNumber = "105465" });
+            _scoutsInput = new List<Scout>
+            {
+                new Scout { Balance = 50, FirstName = "test", ScoutId = 45, Active = true, Email = "test1@test.com", Section = ScoutType.Scout, MemberNumber = "105468" },
+                new Scout { Balance = 52, FirstName = "test 2", ScoutId = 2, Active = false, Email = "test2@test.com", Section = ScoutType.Scout, MemberNumber = "105467" },
+                new Scout { Balance = 88, FirstName = "test cub", ScoutId = 99, Active = false, Email = "test3@test.com", Section = ScoutType.Cub, MemberNumber = "105466" },
+                new Scout { Balance = 56, FirstName = "test 4", ScoutId = 48, Active = true, Email = "test4@test.com", Section = ScoutType.Scout, MemberNumber = "105465" }
+            };
             _scouts = _scoutsInput.CreateDbSetMock();
             _context.Setup(x => x.Scouts).Returns(_scouts.Object);
 
