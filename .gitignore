@@ -22,3 +22,6 @@ Scout.Auth/obj/
 Test.Scout.Auth/bin/
 Test.Scout.Auth/obj/project.assets.json
 Test.Scout.Auth/obj/
+.axoCover/
+Scouts.Core.Interface/bin/
+.vs/
