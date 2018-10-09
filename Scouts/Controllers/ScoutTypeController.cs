@@ -5,10 +5,10 @@ using Scouts.Core.Model;
 
 namespace Scouts.Controllers
 {
-    [Route("ScoutType")]
+    [Route("scoutType")]
     public class ScoutTypeController : Controller
     {
-        [HttpGet]
+        [HttpGet("")]
         public List<EnumElement> ScoutTypes()
         {
             var list = new List<EnumElement>();

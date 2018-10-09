@@ -2,6 +2,10 @@
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
+    "iis": {
+      "applicationUrl": "http://localhost/scouts/api",
+      "sslPort": 0
+    },
     "iisExpress": {
       "applicationUrl": "http://localhost:49296/",
       "sslPort": 0
@@ -17,9 +21,9 @@
       }
     },
     "Scouts": {
-      "commandName": "Project",
+      "commandName": "IIS",
       "launchBrowser": true,
-      "launchUrl": "ScoutType",
+      "launchUrl": "scoutType",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

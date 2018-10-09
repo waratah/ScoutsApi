@@ -5,6 +5,9 @@
     <PackageTargetFallback>portable-net45+win8</PackageTargetFallback>
     <Description>Scouts API</Description>
     <AssemblyName>Scouts.Api</AssemblyName>
+    <RootNamespace>Scouts.Api</RootNamespace>
+    <Authors>Ken Foskey</Authors>
+    <Company>Scout Australia</Company>
   </PropertyGroup>
 
   <ItemGroup>
